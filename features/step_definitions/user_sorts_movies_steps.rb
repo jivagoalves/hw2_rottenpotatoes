@@ -18,5 +18,5 @@ When /^I click on the header link "([^"]*)"$/ do |link_id|
 end
 
 Then /^I should see the link "([^"]*)" highlighted$/ do |link_id|
-  page.should have_selector("a#" + link_id + ".hilite")
+  page.should have_selector("table#movies th.hilite a#" + link_id)
 end
