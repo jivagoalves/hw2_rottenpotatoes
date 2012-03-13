@@ -10,6 +10,7 @@ class MoviesController < ApplicationController
     @movies = Movie.all unless params[:order]
     @movies = Movie.order("title ASC") if params[:order] == "title"
     @movies = Movie.order("release_date ASC") if params[:order] == "release_date"
+    @order = params[:order] if params[:order]
   end
 
   def new
