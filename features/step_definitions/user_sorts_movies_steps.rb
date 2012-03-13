@@ -5,6 +5,6 @@ When /^I go to movies page$/ do
   visit movies_path
 end
 
-Then /^I should see the link "([^"]*)"$/ do |link_name|
-  page.should have_selector('a', :text => link_name)
+Then /^I should see the link "([^"]*)" with id "([^"]*)"$/ do |link_name, id|
+  page.should have_selector("a##{id}", :text => link_name)
 end

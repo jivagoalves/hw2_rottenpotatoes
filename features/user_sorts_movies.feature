@@ -6,5 +6,5 @@ Feature: Sorting the list of all movies
   Scenario: Sort movies by title
     Given I want to search for a movie
     When I go to movies page
-    Then I should see the link "Movie Title"
-    And I should see the link "Release Date"
+    Then I should see the link "Movie Title" with id "title_header"
+    And I should see the link "Release Date" with id "release_date_header"
