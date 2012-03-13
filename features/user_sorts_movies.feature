@@ -3,7 +3,7 @@ Feature: Sorting the list of all movies
   As an user
   I want to be able to sort the movies
 
-  Scenario: Sort movies by title
+  Scenario: User goes to movies page
     Given I want to search for a movie
     When I go to movies page
     Then I should see a link "Movie Title" with id "title_header"
